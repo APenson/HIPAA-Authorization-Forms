@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIPAA Authorization Forms for Dementia Home Care</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.4;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+        }
+        .header h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+        .header p {
+            color: #666;
+            font-style: italic;
+            margin: 5px 0;
+        }
+        .form-section {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 25px 0;
+            page-break-inside: avoid;
+        }
+        .form-title {
+            color: #2c3e50;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #3498db;
+            padding-bottom: 8px;
+        }
+        .instructions {
+            background: #e8f4fd;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        .form-field {
+            margin: 15px 0;
+            display: flex;
+            align-items: baseline;
+        }
+        .form-field label {
+            font-weight: bold;
+            min-width: 150px;
+            margin-right: 10px;
+        }
+        .form-field input {
+            flex: 1;
+            border: none;
+            border-bottom: 1px solid #333;
+            padding: 2px 5px;
+            font-size: 1em;
+            background: transparent;
+        }
+        .checkbox-section {
+            margin: 20px 0;
+        }
+        .checkbox-item {
+            margin: 8px 0;
+            display: flex;
+            align-items: flex-start;
+        }
+        .checkbox-item input[type="checkbox"] {
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+        .signature-section {
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+            margin-top: 30px;
+        }
+        .signature-line {
+            border-bottom: 1px solid #333;
+            width: 250px;
+            height: 30px;
+            display: inline-block;
+            margin: 10px 20px 10px 0;
+        }
+        .date-line {
+            border-bottom: 1px solid #333;
+            width: 120px;
+            height: 30px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .important-note {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #856404;
+        }
+        .legal-text {
+            font-size: 0.9em;
+            line-height: 1.5;
+            margin: 15px 0;
+        }
+        .print-button {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .print-button button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+        .print-button button:hover {
+            background: #2980b9;
+        }
+        @media print {
+            .print-button, .instructions {
+                display: none;
+            }
+            .form-section {
+                page-break-inside: avoid;
+                border: 2px solid #333;
+            }
+        }
+        .form-group {
+            margin: 20px 0;
+        }
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 15px 0;
+        }
+        .full-width {
+            grid-column: 1 / -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>HIPAA Authorization Forms for Dementia Home Care</h1>
+        <p>Essential Forms for Family Caregivers and Care Teams</p>
+        <p><em>Bonus Material from "The 4-Step Guide to Quality Dementia Home Care in the U.S."</em></p>
+    </div>
+
+    <div class="instructions">
+        <h3>📋 How to Use These Forms</h3>
+        <p><strong>Important:</strong> These forms allow healthcare providers to share protected health information with designated family members and care team members. Complete separate forms for each healthcare provider (doctor, home health agency, hospital, etc.). Keep copies for your records and provide originals to each provider.</p>
+        <ul>
+            <li><strong>Form 1:</strong> General HIPAA Authorization for family members</li>
+            <li><strong>Form 2:</strong> Care Team Authorization for home care providers</li>
+            <li><strong>Form 3:</strong> Emergency Contact Authorization</li>
+        </ul>
+        <p><strong>Legal Note:</strong> These forms are templates. Consult with an elder law attorney for complex situations or if you need forms for specific state requirements.</p>
+    </div>
+
+    <div class="print-button">
+        <button onclick="window.print()">🖨️ Print All Forms</button>
+    </div>
+
+    <!-- FORM 1: GENERAL FAMILY HIPAA AUTHORIZATION -->
+    <div class="form-section">
+        <div class="form-title">FORM 1: HIPAA AUTHORIZATION FOR FAMILY MEMBERS</div>
+        
+        <div class="important-note">
+            ⚠️ This form authorizes healthcare providers to discuss medical information with designated family members and caregivers.
+        </div>
+
+        <div class="form-group">
+            <h4>PATIENT INFORMATION</h4>
+            <div class="two-column">
+                <div class="form-field">
+                    <label>Patient Name:</label>
+                    <input type="text" placeholder="Full legal name">
+                </div>
+                <div class="form-field">
+                    <label>Date of Birth:</label>
+                    <input type="text" placeholder="MM/DD/YYYY">
+                </div>
+                <div class="form-field">
+                    <label>Address:</label>
+                    <input type="text" placeholder="Street address">
+                </div>
+                <div class="form-field">
+                    <label>City, State, ZIP:</label>
+                    <input type="text" placeholder="City, State ZIP">
+                </div>
+                <div class="form-field">
+                    <label>Phone:</label>
+                    <input type="text" placeholder="Primary phone number">
+                </div>
+                <div class="form-field">
+                    <label>Patient ID/SSN:</label>
+                    <input type="text" placeholder="Last 4 digits of SSN">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h4>AUTHORIZED PERSONS</h4>
+            <p class="legal-text">I authorize the following individuals to receive my protected health information:</p>
+            
+            <div style="margin: 15px 0;">
+                <div class="form-field">
+                    <label>Name:</label>
+                    <input type="text" placeholder="Full name of authorized person">
+                </div>
+                <div class="form-field">
+                    <label>Relationship:</label>
+                    <input type="text" placeholder="Spouse, child, etc.">
+                </div>
+                <div class="form-field">
+                    <label>Phone:</label>
+                    <input type="text" placeholder="Contact number">
+                </div>
+            </div>
+
+            <div style="margin: 15px 0;">
+                <div class="form-field">
+                    <label>Name:</label>
+                    <input type="text" placeholder="Full name of authorized person">
+                </div>
+                <div class="form-field">
+                    <label>Relationship:</label>
+                    <input type="text" placeholder="Spouse, child, etc.">
+                </div>
+                <div class="form-field">
+                    <label>Phone:</label>
+                    <input type="text" placeholder="Contact number">
+                </div>
+            </div>
+
+            <div style="margin: 15px 0;">
+                <div class="form-field">
+                    <label>Name:</label>
+                    <input type="text" placeholder="Full name of authorized person">
+                </div>
+                <div class="form-field">
+                    <label>Relationship:</label>
+                    <input type="text" placeholder="Spouse, child, etc.">
+                </div>
+                <div class="form-field">
+                    <label>Phone:</label>
+                    <input type="text" placeholder="Contact number">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h4>INFORMATION TO BE DISCLOSED</h4>
+            <div class="checkbox-section">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="all-info">
+                    <label for="all-info">All medical information in my medical record</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="diagnosis">
+                    <label for="diagnosis">Diagnosis and treatment information</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="medications">
+                    <label for="medications">Medication information</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="test-results">
+                    <label for="test-results">Laboratory and test results</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="mental-health">
+                    <label for="mental-health">Mental health information (including dementia/Alzheimer's care)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="billing">
+                    <label for="billing">Billing and insurance information</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h4>PURPOSE OF DISCLOSURE</h4>
+            <div class="checkbox-section">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="family-care">
+                    <label for="family-care">Family caregiving and care coordination</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="medical-decisions">
+                    <label for="medical-decisions">Medical decision-making assistance</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="insurance-coord">
+                    <label for="insurance-coord">Insurance and benefits coordination</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="emergency">
+                    <label for="emergency">Emergency situations</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h4>EXPIRATION</h4>
+            <div class="checkbox-section">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="no-expiration">
+                    <label for="no-expiration">This authorization does not expire</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="specific-date">
+                    <label for="specific-date">This authorization expires on: <input type="text" style="width: 120px; margin-left: 10px;" placeholder="MM/DD/YYYY"></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="legal-text">
+            <p><strong>I understand that:</strong></p>
+            <ul>
+                <li>I may revoke this authorization at any time by writing to the healthcare provider</li>
+                <li>Revocation will not affect actions already taken based on this authorization</li>
+                <li>Information disclosed may be re-disclosed and may no longer be protected by federal privacy rules</li>
+                <li>Treatment, payment, enrollment, or eligibility for benefits may not be conditioned on signing this authorization</li>
+            </ul>
+        </div>
+
+        <div class="signature-section">
+            <div style="margin: 20px 0;">
+                <span>Patient Signature: </span><span class="signature-line"></span>
+                <span style="margin-left: 30px;">Date: </span><span class="date-line"></span>
+            </div>
+            <div style="margin: 20px 0;">
+                <span>Printed Name: </span><span class="signature-line"></span>
+            </div>
+            <div style="margin: 20px 0;">
+                <span>Legal Representative Signature (if applicable): </span><span class="signature-line"></span>
+            </div>
+            <div style="margin: 20px 0;">
+                <span>Legal Representative Name/Relationship: </span><span class="signature-line"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORM 2: CARE TEAM AUTHORIZATION -->
+    <div class="form-section">
+        <div class="form-title">FORM 2: CARE TEAM HIPAA AUTHORIZATION</div>
+        
+        <div class="important-note">
+            ⚠️ This form authorizes communication between healthcare providers and home care agencies for coordinated dementia care.
+        </div>
+
+        <div class="form-group">
+            <h4>PATIENT INFORMATION</h4>
+            <div class="two-column">
+                <div class="form-field">
+                    <label>Patient Name:</label>
+                    <input type="text" placeholder="Full legal name">
+                </div>
+                <div class="form-field">
+                    <label>Date of Birth:</label>
+                    <input type="text" placeholder="MM/DD/YYYY">
+                </div>
+                <div class="form-field">
+                    <label>Medicare ID:</label>
+                    <input type="text" placeholder="Medicare number">
+                </div>
+                <div class="form-field">
+                    <label>Medicaid ID:</label>
+                    <input type="text" placeholder="Medicaid number (if applicable)">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h4>AUTHORIZED CARE TEAM MEMBERS</h4>
+            <p class="legal-text">I authorize the following healthcare providers and organizations to share my medical information with each other for care coordination:</p>
+            
+            <div style="margin: 15px 0;">
+                <div class="form-field">
+                    <label>Primary Care Physician:</label>
+                    <input type="text" placeholder="Doctor name and practice">
+                </div>
+                <div class="form-field">
+                    <label>Phone:</label>
+                    <input type="text" placeholder="Office phone">
+                </div>
+            </div>
+
+            <div style="margin: 15px 0;">
+                <div class="form-field">
+                    <label>Specialist (Neurologist/Geriatrician):</label>
+                    <input type="text" placeholder="Doctor name and practice">
+                </div>
+                <div class="form-field">
+                    <label>Phone:</label>
+                    <input type="text" placeholder="Office phone">
+                </div>
+            </div>
+
+            <div style="margin: 15px 0;">
+                <div class="form-field">
+                    <label>Home Health Agency:</label>
+                    <input type="text" placeholder="Agency name">
+                </div>
+                <div class="form-field">
+                    <label>Phone:</label>
+                    <input type="text" placeholder="Agency phone">
+                </div>
+            </div>
+
+            <div style="margin: 15px 0;">
+                <div class="form-field">
+                    <label>Adult Day Program:</label>
+                    <input type="text" placeholder="Program name">
+                </div>
+                <div class="form-field">
+                    <label>Phone:</label>
+                    <input type="text" placeholder="Program phone">
+                </div>
+            </div>
+
+            <div style="margin: 15px 0;">
+                <div class="form-field">
+                    <label>Hospital/Health System:</label>
+                    <input type="text" placeholder="Hospital name">
+                </div>
+                <div class="form-field">
+                    <label>Phone:</label>
+                    <input type="text" placeholder="Hospital phone">
+                </div>
+            </div>
+
+            <div style="margin: 15px 0;">
+                <div class="form-field">
+                    <label>Other Provider:</label>
+                    <input type="text" placeholder="Provider name">
+                </div>
+                <div class="form-field">
+                    <label>Phone:</label>
+                    <input type="text" placeholder="Provider phone">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h4>SPECIFIC INFORMATION FOR CARE COORDINATION</h4>
+            <div class="checkbox-section">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="care-plan">
+                    <label for="care-plan">Care plans and treatment goals</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="med-changes">
+                    <label for="med-changes">Medication changes and updates</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="cognitive-status">
+                    <label for="cognitive-status">Cognitive status and behavioral changes</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="safety-concerns">
+                    <label for="safety-concerns">Safety concerns and incidents</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="functional-status">
+                    <label for="functional-status">Functional status and ADL changes</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="discharge-planning">
+                    <label for="discharge-planning">Discharge planning and transitions</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="insurance-auth">
+                    <label for="insurance-auth">Insurance authorizations and benefits</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h4>COMMUNICATION METHODS</h4>
+            <div class="checkbox-section">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="phone-comm">
+                    <label for="phone-comm">Telephone communication</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="secure-email">
+                    <label for="secure-email">Secure email/patient portal</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="written-reports">
+                    <label for="written-reports">Written reports and documentation</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="care-conferences">
+                    <label for="care-conferences">Care team conferences</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="signature-section">
+            <div style="margin: 20px 0;">
+                <span>Patient Signature: </span><span class="signature-line"></span>
+                <span style="margin-left: 30px;">Date: </span><span class="date-line"></span>
+            </div>
+            <div style="margin: 20px 0;">
+                <span>Legal Representative Signature (if applicable): </span><span class="signature-line"></span>
+            </div>
+            <div style="margin: 20px 0;">
+                <span>Legal Representative Name/Relationship: </span><span class="signature-line"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORM 3: EMERGENCY CONTACT AUTHORIZATION -->
+    <div class="form-section">
+        <div class="form-title">FORM 3: EMERGENCY CONTACT HIPAA AUTHORIZATION</div>
+        
+        <div class="important-note">
+            ⚠️ This form allows healthcare providers to contact designated persons in emergency situations, even if they cannot reach you first.
+        </div>
+
+        <div class="form-group">
+            <h4>PATIENT INFORMATION</h4>
+            <div class="two-column">
+                <div class="form-field">
+                    <label>Patient Name:</label>
+                    <input type="text" placeholder="Full legal name">
+                </div>
+                <div class="form-field">
+                    <label>Date of Birth:</label>
+                    <input type="text" placeholder="MM/DD/YYYY">
+                </div>
+                <div class="form-field full-width">
+                    <label>Home Address:</label>
+                    <input type="text" placeholder="Complete home address">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h4>PRIMARY EMERGENCY CONTACT</h4>
+            <div class="form-field">
+                <label>Name:</label>
+                <input type="text" placeholder="Full name">
+            </div>
+            <div class="form-field">
+                <label>Relationship:</label>
+                <input type="text" placeholder="Spouse, child, etc.">
+            </div>
+            <div class="two-column">
+                <div class="form-field">
+                    <label>Home Phone:</label>
+                    <input type="text" placeholder="Home phone">
+                </div>
+                <div class="form-field">
+                    <label>Cell Phone:</label>
+                    <input type="text" placeholder="Cell phone">
+                </div>
+                <div class="form-field">
+                    <label>Work Phone:</label>
+                    <input type="text" placeholder="Work phone">
+                </div>
+                <div class="form-field">
+                    <label>Email:</label>
+                    <input type="text" placeholder="Email address">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h4>SECONDARY EMERGENCY CONTACT</h4>
+            <div class="form-field">
+                <label>Name:</label>
+                <input type="text" placeholder="Full name">
+            </div>
+            <div class="form-field">
+                <label>Relationship:</label>
+                <input type="text" placeholder="Spouse, child, etc.">
+            </div>
+            <div class="two-column">
+                <div class="form-field">
+                    <label>Home Phone:</label>
+                    <input type="text" placeholder="Home phone">
+                </div>
+                <div class="form-field">
+                    <label>Cell Phone:</label>
+                    <input type="text" placeholder="Cell phone">
+                </div>
+                <div class="form-field">
+                    <label>Work Phone:</label>
+                    <input type="text" placeholder="Work phone">
+                </div>
+                <div class="form-field">
+                    <label>Email:</label>
+                    <input type="text" placeholder="Email address">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h4>EMERGENCY AUTHORIZATION</h4>
+            <div class="checkbox-section">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="emergency-medical">
+                    <label for="emergency-medical">Medical emergency information and status updates</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="location-info">
+                    <label for="location-info">Location information (hospital, emergency room)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="treatment-decisions">
+                    <label for="treatment-decisions">Treatment decisions if I cannot communicate</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="insurance-emergency">
+                    <label for="insurance-emergency">Insurance and billing information for emergency care</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="medication-emergency">
+                    <label for="medication-emergency">Current medications and allergies</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h4>SPECIAL INSTRUCTIONS</h4>
+            <div style="margin: 15px 0;">
+                <label style="display: block; margin-bottom: 10px;"><strong>Important medical conditions to communicate:</strong></label>
+                <textarea style="width: 100%; height: 60px; border: 1px solid #ccc; padding: 10px;" placeholder="List dementia diagnosis, other conditions, and specific care needs..."></textarea>
+            </div>
+            <div style="margin: 15px 0;">
+                <label style="display: block; margin-bottom: 10px;"><strong>Preferred hospital or medical facility:</strong></label>
+                <input type="text" style="width: 100%;" placeholder="Hospital name and address">
+            </div>
+        </div>
+
+        <div class="legal-text">
+            <p><strong>EMERGENCY AUTHORIZATION:</strong> In the event of a medical emergency, I authorize healthcare providers to contact the individuals listed above and share necessary medical information for my care, even if they cannot reach me first. This authorization remains in effect until revoked in writing.</p>
+        </div>
+
+        <div class="signature-section">
+            <div style="margin: 20px 0;">
+                <span>Patient Signature: </span><span class="signature-line"></span>
+                <span style="margin-left: 30px;">Date: </span><span class="date-line"></span>
+            </div>
+            <div style="margin: 20px 0;">
+                <span>Witness Signature: </span><span class="signature-line"></span>
+                <span style="margin-left: 30px;">Date: </span><span class="date-line"></span>
+            </div>
+            <div style="margin: 20px 0;">
+                <span>Witness Printed Name: </span><span class="signature-line"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="instructions">
+        <h3>📝 Important Reminders</h3>
+        <ul>
+            <li><strong>Keep copies:</strong> Make copies of all signed forms for your family records</li>
+            <li><strong>Distribute to providers:</strong> Give original forms to each healthcare provider and care agency</li>
+            <li><strong>Update regularly:</strong> Review and update forms annually or when contact information changes</li>
+            <li><strong>Carry with you:</strong> Keep a copy of emergency authorization in wallet or purse</li>
+            <li><strong>Legal review:</strong> Consider having an elder law attorney review forms for complex family situations</li>
+            <li><strong>Revocation rights:</strong> Remember you can revoke these authorizations at any time in writing</li>
+        </ul>
+        
+        <div class="important-note">
+            <strong>State-Specific Requirements:</strong> Some states may have additional requirements for HIPAA authorizations. Check with your healthcare providers about any state-specific forms that may be needed.
+        </div>
+    </div>
+
+    <div style="text-align: center; margin: 40px 0; color: #666;">
+        <p><em>These forms are provided as educational templates and do not constitute legal advice.<br>
+        Consult with healthcare providers and legal professionals for specific situations.</em></p>
+        <p><strong>From "The 4-Step Guide to Quality Dementia Home Care in the U.S."</strong></p>
+    </div>
+
+    <script>
+        // Simple form interaction
+        document.addEventListener('DOMContentLoaded', function() {
+            // Auto-fill patient name across forms when filled in first form
+            const patientNameInputs = document.querySelectorAll('input[placeholder="Full legal name"]');
+            if (patientNameInputs.length > 0) {
+                patientNameInputs[0].addEventListener('input', function() {
+                    const name = this.value;
+                    patientNameInputs.forEach((input, index) => {
+                        if (index > 0) input.value = name;
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
